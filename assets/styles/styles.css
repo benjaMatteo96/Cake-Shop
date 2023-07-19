@@ -1,28 +1,33 @@
 :root {
-  --primary:#23192d;
-  --secondary:#fd0a54;
-  --lightpink:#f57576;
-  --pinky:#febf97;
-  --almostwhite:#f5ecb7;
+  --primary: #23192d;
+  --secondary: #fd0a54;
+  --lightpink: #f57576;
+  --pinky: #febf97;
+  --almostwhite: #f5ecb7;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* outline: 2px solid red; */
 }
 
-html{
+html {
   font-size: 63.5%; /* to convert 1rem = 10px */
 }
 
 body {
   font-size: 16px; /* to convert 1rem = 10px */
   background-color: var(--almostwhite);
-  font-family: 'Montserrat', sans-serif;
-  background: rgb(240,33,99);
-  background: linear-gradient(0deg, rgba(240,33,99,0.24971987085849967) 0%, rgba(255,255,255,1) 51%, rgba(240,33,99,0.3841736523711047) 100%); 
+  font-family: "Montserrat", sans-serif;
+  background: rgb(240, 33, 99);
+  background: linear-gradient(
+    0deg,
+    rgba(240, 33, 99, 0.24971987085849967) 0%,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(240, 33, 99, 0.3841736523711047) 100%
+  );
 }
 
 header {
@@ -49,7 +54,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 nav a {
@@ -58,7 +62,7 @@ nav a {
   color: white;
   padding: 1.8rem;
   border-radius: 4rem;
-  height:3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   font-size: 1.4rem;
@@ -79,7 +83,6 @@ nav a:hover {
 main {
   min-height: 90vh;
   padding: 5rem;
-
 }
 
 p {
@@ -104,14 +107,13 @@ p {
   width: 100%;
   transition: 1s;
 }
-.index-section{
+.index-section {
   display: flex;
   justify-content: space-evenly;
   margin-top: 3rem;
-
 }
 
-.index-section  p {
+.index-section p {
   width: 30rem;
   display: flex;
   align-items: center;
@@ -153,7 +155,6 @@ footer {
 
 .about-p {
   width: 40%;
-  
 }
 
 /* Contact */
@@ -171,9 +172,8 @@ footer {
 .contact-info-div {
   display: flex;
   justify-content: space-around;
-  margin-top:2rem;
+  margin-top: 2rem;
   width: 100%;
-
 }
 
 .contact-info-div a {
@@ -193,14 +193,16 @@ footer {
 
 /* Information  */
 
-.info-table{
+.info-table {
   margin: 0 auto;
 }
 
-
-table,tr,th,td {
+table,
+tr,
+th,
+td {
   border: 1px solid black;
-  border-collapse: collapse ;
+  border-collapse: collapse;
   padding: 4rem;
   background-color: var(--primary);
   color: white;
@@ -211,7 +213,6 @@ table,tr,th,td {
   width: 30rem;
   height: 30rem;
   object-fit: cover;
- 
 }
 
 .bt-list-img {
@@ -219,7 +220,6 @@ table,tr,th,td {
   justify-content: space-evenly;
   margin-bottom: 3rem;
   padding: 2rem;
-  
 }
 
 .bt-list-img ol {
@@ -233,6 +233,3 @@ table,tr,th,td {
   font-weight: 500;
   font-size: 1.7rem;
 }
-
-
-
