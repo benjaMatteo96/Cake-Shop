@@ -21,6 +21,8 @@ body {
   font-size: 16px; /* to convert 1rem = 10px */
   background-color: var(--almostwhite);
   font-family: 'Montserrat', sans-serif;
+  background: rgb(240,33,99);
+  background: linear-gradient(0deg, rgba(240,33,99,0.24971987085849967) 0%, rgba(255,255,255,1) 51%, rgba(240,33,99,0.3841736523711047) 100%); 
 }
 
 header {
@@ -30,6 +32,12 @@ header {
   align-items: center;
 }
 
+header a {
+  color: green;
+  text-decoration: none;
+  margin-top: 2rem;
+  font-weight: bold;
+}
 h1 {
   min-height: 2vh;
   margin-top: 2rem;
@@ -58,9 +66,10 @@ nav a {
 }
 
 nav a:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: green;
   color: black;
+  transition: 0.8s;
 }
 
 .nav-logo {
@@ -75,15 +84,26 @@ main {
 
 p {
   font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
 }
 
 .banner {
   height: 70vh;
   width: 100%;
   object-fit: cover;
-  
 }
 
+.banner-container:hover {
+  display: inline-block;
+  width: 100%;
+  transition: 1s;
+}
 .index-section{
   display: flex;
   justify-content: space-evenly;
@@ -118,19 +138,17 @@ footer {
 
 /* About us */
 
-.about-us-header a {
- text-decoration: none;
-}
-
 .about-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 3rem;
+  padding: 2rem;
 }
 
 .about-img {
   width: 40vh;
+  height: 40vh;
 }
 
 .about-p {
@@ -158,22 +176,41 @@ footer {
 
 }
 
+.contact-info-div a {
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+
+.contact-info-div a:hover {
+  background-color: green;
+  color: black;
+  transition: 0.8s;
+  font-weight: 500;
+}
+
 /* Information  */
 
 .info-table{
   margin: 0 auto;
 }
 
+
 table,tr,th,td {
   border: 1px solid black;
   border-collapse: collapse ;
-  padding: 0.8rem;
+  padding: 4rem;
+  background-color: var(--primary);
+  color: white;
 }
 
 /* Benefits and Tips */
 .bt-img {
   width: 30rem;
   height: 30rem;
+  object-fit: cover;
  
 }
 
@@ -181,6 +218,8 @@ table,tr,th,td {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3rem;
+  padding: 2rem;
+  
 }
 
 .bt-list-img ol {
@@ -189,6 +228,11 @@ table,tr,th,td {
   width: 30rem;
 }
 
+.bt-list-img li {
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
 
 
 
