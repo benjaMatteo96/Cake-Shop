@@ -107,6 +107,7 @@ p {
   width: 100%;
   transition: 1s;
 }
+
 .index-section {
   display: flex;
   justify-content: space-evenly;
@@ -233,3 +234,122 @@ td {
   font-weight: 500;
   font-size: 1.7rem;
 }
+
+/* Raffle */
+
+.form-map-containter {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.container-map {
+  border: 1px solid black;
+}
+.raffle-map {
+  width: 50rem;
+  height: 100%;
+  border:2px solid black;
+}
+
+.raffle-fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.raffle-fieldset  input,
+select {
+  padding: 1rem
+}
+
+.form-container {
+  width: 50rem;
+  height: 100%;
+}
+
+.check-submit-container {
+  display:flex;
+  justify-content: space-between;
+}
+
+/*  MediaQueries*/
+
+@media (min-width: 320px) and (max-width:1023px){
+  .banner {
+    width: 100%;
+  }
+  nav {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding: 2rem;
+  }
+  nav a {
+   width: 100%;
+   order: 2;
+   border-radius: 0;
+
+  }
+  .nav-logo {
+   order: 1;
+  }
+
+  .index-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; 
+    gap: 2rem;
+    
+  }
+
+  .index-section p { 
+    width: 50rem;
+  }
+
+  header p {
+    font-size: 1.8rem;
+    padding: 2rem;
+
+  }
+
+  /* About medias */
+
+  .about-us-header {
+    margin-bottom: 0;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    gap: 2rem;
+  }
+
+  /* Contact  medias*/
+  .contact-info-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Benefits and Tips Medias */
+  .bt-list-img {
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+  }
+
+  /* Raffle */
+  .form-map-containter {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .raffle-map {
+    width: 100%;
+  }
+ }
+
+  
