@@ -18,13 +18,13 @@
       class="nav-logo"
       src="/assets/images/logo.png"
       alt="logo de snowy cream"
-    />
+    >
   </nav>
 
-  <header class="about-us-header">
+  <header class="raffle-header">
     <h1>Raffle</h1>
     <a href="">
-      <p>You can collaborate so that we expand the business and by doing so you will be part participating in the raffle for a box of traditional ice creams.</p>
+      <p class="raffle-header-p">You can collaborate so that we expand the business and by doing so you will be part participating in the raffle for a box of traditional ice creams.</p>
     </a>
   </header>
   <main>
@@ -34,7 +34,7 @@
       </div>
       
       <div class="form-container">
-        <form action="/show_data.html" method="pet" target="_blank" class="raffle-form">
+        <form action="/show_data.html" method="get" target="_blank" class="raffle-form">
           <fieldset class="raffle-fieldset">
 
             <label for="first-name">First Name</label>
@@ -45,12 +45,13 @@
     
             <label for="meetings">Meet or Zoom</label>
             <select name="channel-meeting" id="meetings" class="input-select" required>
+              <option value="Message">Select an option</option>
               <option value="Meet">Meet</option>
               <option value="Zoom">Zoom</option>
             </select>
     
             <label for="">Choose Date</label>
-            <input type="date" required>
+            <input type="date" value="date" name="date" required>
             
             <div>
               <input type="radio" value="Cash" name="payment" id="cash">
@@ -66,16 +67,16 @@
               <input type="radio" value="Debit Card" name="payment" id="debit-card">
               <label for="debit-card">Debit Card</label>
             </div>
-        
-            <label for="">Message (Optional)</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <label for="" class="text-area-label">Message (Optional)</label>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
 
             <div class="check-submit-container">
               <div>
-                <input type="checkbox">
+                <input type="checkbox" required>
                 <label for="">I accept terms and conditions..</label>
               </div>
-              <input type="submit">
+              <input type="submit" class="submit-button">
             </div>
 
           </fieldset>

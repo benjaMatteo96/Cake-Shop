@@ -1,6 +1,6 @@
 :root {
   --primary: #23192d;
-  --secondary: #fd0a54;
+  --secondary: #ee346c;
   --lightpink: #f57576;
   --pinky: #febf97;
   --almostwhite: #f5ecb7;
@@ -38,7 +38,7 @@ header {
 }
 
 header a {
-  color: green;
+  color: var(--secondary);
   text-decoration: none;
   margin-top: 2rem;
   font-weight: bold;
@@ -60,18 +60,22 @@ nav a {
   text-decoration: none;
   background-color: var(--secondary);
   color: white;
-  padding: 1.8rem;
+  padding: 0.8rem;
   border-radius: 4rem;
-  height: 3rem;
+  /* height: 3rem; */
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  border: 1px solid;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
 }
 
 nav a:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: green;
+  background-color: rgb(58, 180, 109);
   color: black;
   transition: 0.8s;
 }
@@ -82,7 +86,6 @@ nav a:hover {
 
 main {
   min-height: 90vh;
-  padding: 5rem;
 }
 
 p {
@@ -98,12 +101,12 @@ p {
 
 .banner {
   height: 70vh;
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
 }
 
-.banner-container:hover {
-  display: inline-block;
+.banner:hover {
+  /* display: inline-block; */
   width: 100%;
   transition: 1s;
 }
@@ -112,6 +115,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin-top: 3rem;
+  padding: 2rem;
 }
 
 .index-section p {
@@ -186,7 +190,7 @@ footer {
 }
 
 .contact-info-div a:hover {
-  background-color: green;
+  background-color: rgb(91, 163, 168);
   color: black;
   transition: 0.8s;
   font-weight: 500;
@@ -194,10 +198,13 @@ footer {
 
 /* Information  */
 
+.table-container {
+  margin-top: 8rem;
+}
+
 .info-table {
   margin: 0 auto;
 }
-
 table,
 tr,
 th,
@@ -237,10 +244,16 @@ td {
 
 /* Raffle */
 
+.raffle-header-p {
+  padding: 2rem;
+  width: 90rem;
+}
+
 .form-map-containter {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
+  margin: 2rem;
 }
 .container-map {
   border: 1px solid black;
@@ -254,27 +267,47 @@ td {
 .raffle-fieldset {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
+  border: none;
 }
 
 .raffle-fieldset  input,
-select {
-  padding: 1rem
+select{
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.text-area-label {
+  margin-top: 2rem;
 }
 
 .form-container {
   width: 50rem;
   height: 100%;
+  background-color: var(--primary);
+  border-radius: 2rem;
 }
-
+label {
+  color: white;
+}
 .check-submit-container {
   display:flex;
   justify-content: space-between;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 /*  MediaQueries*/
 
-@media (min-width: 320px) and (max-width:1023px){
+@media (min-width: 768px) and (max-width:1023px){
   .banner {
     width: 100%;
   }
@@ -339,6 +372,10 @@ select {
   }
 
   /* Raffle */
+  .raffle-header-p {
+    width: 60rem;
+  }
+
   .form-map-containter {
     display: flex;
     flex-direction: column-reverse;
@@ -351,5 +388,151 @@ select {
     width: 100%;
   }
  }
+@media (min-width: 320px) and (max-width:767px){
+  /* *{
+    border: 1px solid green;
+  } */
+    nav {
+      flex-direction: column;
+      width: auto;
+      gap: 1rem;
+      padding: 1rem;
+    }
 
+    nav a {
+      width: 100%;
+      border-radius: 0;
+      order: 2;
+    }
+
+    .nav-logo{
+      order: 1;
+    }
+
+    .banner-container{
+      width: 100%;
+      height: 100%;
+    }
+
+    .banner{
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .index-section {
+      flex-direction: column-reverse;
+      margin-top: 3rem;
+    }
+    
+    .index-section img {
+      width: 100%;
+      padding: 2rem;
+    
+    }
+
+    .index-section p {
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 2rem;
+    }
+
+    /*  About us min 320px*/
+
+    .about-section{
+      flex-direction: column;
+      margin-top: 1rem;
+      padding-top:0;
+    }
+
+    .about-section p { 
+      width: 30rem;
+      padding: 2rem;
+    }
+
+    /*  Contact min 320px*/
+    .contact-img {
+      width: 100%;
+    }
+
+    .contact-info-div {
+      flex-direction: column;
+      gap: 3rem;
+      width: 100%;
+    }
+
+    .contact-info-div a {
+      padding: 2rem;
+    }
+
+    /*  Information min 320px*/
   
+    .information-p {
+      width: 100%;
+      text-align: center;
+    }
+
+    table,td,tr,th {
+      padding: 1.5rem;
+      align-items: center;
+      
+    }
+
+    .info-table {
+      width: 15rem;
+    }
+
+    /* Benefits and Tips */
+
+    .bt-header a {
+      padding: 1rem;
+      margin: 1rem;
+      font-size: 1rem;
+    }
+    .bt-list-img {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+    }
+
+    .bt-list-img img {
+      width: auto;
+    }
+
+    .bt-list-img ol {
+      width: 100%;
+    }
+
+    .tips-list {
+      width: 25rem;
+    }
+
+    /* Raffle */
+
+    .raffle-header a {
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    .raffle-header-p {
+      width: 30rem;
+    }
+
+    .form-map-containter {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container {
+      width: 100%;
+      order:1;
+    }
+
+    .container-map {
+      order:2;
+    }
+
+    .raffle-map {
+      width: 100%;
+    }
+  }
