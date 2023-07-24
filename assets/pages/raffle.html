@@ -45,13 +45,13 @@
     
             <label for="meetings">Meet or Zoom</label>
             <select name="channel-meeting" id="meetings" class="input-select" required>
-              <option value="Message">Select an option</option>
+              <option value="">Select an option</option>
               <option value="Meet">Meet</option>
               <option value="Zoom">Zoom</option>
             </select>
     
-            <label for="">Choose Date</label>
-            <input type="date" value="date" name="date" required>
+            <label for="date">Choose Date</label>
+            <input type="date" value="" name="date" id="date" required>
             
             <div>
               <input type="radio" value="Cash" name="payment" id="cash">
@@ -68,13 +68,13 @@
               <label for="debit-card">Debit Card</label>
             </div>
 
-            <label for="" class="text-area-label">Message (Optional)</label>
-            <textarea name="" id="" cols="30" rows="10" required></textarea>
+            <label for="textarea" class="text-area-label">Message (Optional)</label>
+            <textarea name="commentary" id="textarea" cols="30" rows="10" required></textarea>
 
             <div class="check-submit-container">
               <div>
-                <input type="checkbox" required>
-                <label for="">I accept terms and conditions..</label>
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox">I accept terms and conditions..</label>
               </div>
               <input type="submit" class="submit-button">
             </div>
